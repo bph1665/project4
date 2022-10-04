@@ -5,11 +5,14 @@
 
 # Step 1:
 # Create dockerpath
-# dockerpath=<your docker ID/path>
+dockerpath="benherman/bostonhousing"
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
+docker login
+docker tag bostonhousing $dockerpath
 
 # Step 3:
 # Push image to a docker repository
+docker push $dockerpath
