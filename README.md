@@ -1,3 +1,23 @@
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/bph1665/project4/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/bph1665/project4/tree/master)
+
+Summary:
+This project uses the sklearn model from the site below to predict house prices based on various factors.
+https://www.kaggle.com/c/boston-housing
+
+Instructions:
+Call the scripts below:
+- run_docker.sh to build and run the docker image locally
+- upload_docker.sh to upload the image to my dockerhub repo
+- run_kubernetes.sh to pull the image to a local minikube kubernetes cluser
+
+
+The files of key interest are:
+requirements.txt:  a list of required packages
+app.py:  the application code
+Makefile: steps to setup, install, test and lint the app.
+
+
+
 <include a CircleCI status badge, here>
 
 ## Project Overview
